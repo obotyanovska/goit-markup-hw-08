@@ -1,0 +1,15 @@
+.header {
+  background-color: $primary-white-clr;
+  position: relative;
+  // .container {
+  //   // display: flex;
+  // }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $line-clr;
+  }
+}
+

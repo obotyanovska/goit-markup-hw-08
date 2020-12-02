@@ -1,0 +1,40 @@
+.services {
+  @media screen and (max-width: 1199px) {
+    display: none; 
+  } 
+
+  padding-bottom: 94px;
+  background-color: $primary-white-clr;  
+}
+
+.services-list {
+  display: flex;
+
+  .subtitle {
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    @include fonts(14px, 700, 1.14, 0.03em); 
+    color: $primary-white-clr;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}   
+
+.services-item {
+  position: relative;
+  width: calc((100% - 2 * 30px)/3);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+.subtitle-thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $bg-overlay-features-clr;
+}
+

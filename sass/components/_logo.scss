@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  font-family: $logo-font;
+  @include fonts(26px, 700, 1.19, 0.03em);
+  color: var(--primary-black-color);
+
+  &-accent {
+    color: $accent-clr;
+  }
+
+  &.inverse {
+    color: $primary-white-clr;
+  }
+}
+
+
+

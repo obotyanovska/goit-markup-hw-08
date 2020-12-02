@@ -1,0 +1,168 @@
+// форма футера
+
+.email-form {
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
+}
+
+.email-field {
+  height: 50px;
+  padding-left: 15px;
+  @include fonts(16px, 400, 1.25, 0.03em);
+  color: $secondary-white-clr;
+  @extend %bordered;
+  border-color: $email-border-clr;
+  background-color: $bg-dark-clr;
+
+  @media screen and (max-width: 767px){
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px){
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  &:invalid {
+    color: $input-invalid-clr;
+  }
+}
+
+// форма модалки
+
+.field-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &.comment {
+    margin-bottom: 20px;   
+  }
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  @extend %bordered;
+  border-color: $input-border-clr;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  .field-form:focus-within &, 
+  .field-form:hover & {
+    border-color: $accent-clr;
+  }
+}
+
+.form-label {
+  margin-bottom: 4px;
+  @include fonts(12px, 400, 1.17, 0.01em);
+  color: $main-text-clr;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: $title-text-clr;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .field-form:focus-within &,
+  .field-form:hover & {
+    fill: $accent-clr;
+  }
+}
+
+.comment-input {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+
+  &::placeholder {
+    @include fonts(12px, 400, 1.17, 0.01em);
+    color: $placeholder-clr;
+  }
+}
+
+// чекбокс политики
+
+.policy {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.policy-label {
+  margin-left: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $main-text-clr;
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    margin-left: 35px;
+  }
+}
+
+.policy-link {
+  color: $accent-clr;
+}
+
+.policy-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $title-text-clr;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width:1200px) {
+    left: 12px;
+  }
+
+  .policy-input:checked + &,
+  .policy-input:checked:focus + & {
+    background-image: url('../images/icon-form-check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    background-color: $accent-clr;
+    border-color: $accent-clr;
+  }
+
+  .policy-input:focus + &,
+  .policy-input:hover + & {  
+    border-color: $accent-clr;
+  }   
+}
+
+.form {
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
