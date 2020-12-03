@@ -1,9 +1,6 @@
 .header {
   background-color: $primary-white-clr;
-  position: relative;
-  // .container {
-  //   // display: flex;
-  // }
+  position: relative; 
 
   &::after {
     content: "";

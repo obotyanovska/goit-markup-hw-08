@@ -4,7 +4,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  // z-index: 5;
 
   @media screen and (min-width:768px) {
     display: none;
@@ -43,6 +42,7 @@
 
 .menu-container {
   display: flex;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
     position: absolute;
