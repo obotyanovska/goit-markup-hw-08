@@ -49,11 +49,14 @@ h1, h2, h3, h4, p {
 
 .section-title {
   margin-bottom: 30px;
-  // margin-bottom: 50px;
   @include fonts(28px, 700, 1.17, 0.03em);
-  // @include fonts(36px, 700, 1.17, 0.03em);
   color: $title-text-clr;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  };
 }
 
 .visually-hidden {
