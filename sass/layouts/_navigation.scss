@@ -1,7 +1,5 @@
 .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include flexible($fw:nowrap, $fd:row, $jc:space-between, $ai:center);
 
    .logo {
     padding-top: 16px;

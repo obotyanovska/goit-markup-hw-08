@@ -1,8 +1,13 @@
 .logo {
   display: inline-block;
   font-family: $logo-font;
-  @include fonts(26px, 700, 1.19, 0.03em);
+  @include fonts(24px, 700, 1.17, 0.03em);
   color: var(--primary-black-color);
+
+  @media screen and (min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &-accent {
     color: $accent-clr;

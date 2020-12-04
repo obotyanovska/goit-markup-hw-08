@@ -14,19 +14,14 @@
   @extend %bordered;
   border-color: $email-border-clr;
   background-color: $bg-dark-clr;
-
-  @media screen and (max-width: 767px){
-    width: 100%;
-    max-width: 450px;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  max-width: 450px;
   
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-    width: 450px;
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }
@@ -105,16 +100,14 @@
 }
 
 .policy-label {
+  display: inline-block;
   margin-left: 24px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include fonts($fs:12px, $fw:400, $lh:1.7, $ls:0.03em);
   color: $main-text-clr;
-
+  
   @media screen and (min-width:1200px) {
-    font-size: 14px;
     margin-left: 35px;
+    font-size: 14px;
   }
 }
 

@@ -16,25 +16,21 @@
 }
 
 .is-hidden .modal {
-  transform: scale(1);
-  @media screen and (min-width:481px) {
   transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   padding: 40px;
   background-color: $primary-white-clr;
-  transform:  scale(0.8);
+  transform: translate(-50%, -50%) scale(0.8);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
-  @media screen and (min-width:481px) {
-    width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%) scale(0.8);
+  @media screen and (max-width:1199px) {
+    max-width: 450px;
   }
 
   @media screen and (min-width:1200px) {

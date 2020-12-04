@@ -1,10 +1,10 @@
 .services {
+  padding-bottom: 94px;
+  background-color: $primary-white-clr; 
+  
   @media screen and (max-width: 1199px) {
     display: none; 
-  } 
-
-  padding-bottom: 94px;
-  background-color: $primary-white-clr;  
+  }  
 }
 
 .services-list {

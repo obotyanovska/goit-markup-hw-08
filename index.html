@@ -134,9 +134,9 @@
             <li class="services-item">
               <img
                 srcset="
-                    ./images/we-doing-1-370.jpg 1x,
-                    ./images/we-doing-1-740.jpg 2x"
-                src="./images/we-doing-1-370.jpg"
+                    ./images/we-doing-desktop-1-370.jpg 1x,
+                    ./images/we-doing-desktop-1-740.jpg 2x"
+                src="./images/we-doing-desktop-1-370.jpg"
                 alt="рабочий стол разработчика, который пишет код"
                 width="370"
               />
@@ -147,9 +147,9 @@
             <li class="services-item">
               <img
                 srcset="
-                    ./images/we-doing-2-370.jpg 1x,
-                    ./images/we-doing-2-740.jpg 2x"
-                src="./images/we-doing-2-370.jpg"
+                    ./images/we-doing-desktop-2-370.jpg 1x,
+                    ./images/we-doing-desktop-2-740.jpg 2x"
+                src="./images/we-doing-desktop-2-370.jpg"
                 alt="мобильный телефон в руках"
                 width="370"
               />
@@ -160,9 +160,9 @@
             <li class="services-item">
               <img
                 srcset="
-                    ./images/we-doing-3-370.jpg 1x,
-                    ./images/we-doing-3-740.jpg 2x"
-                src="./images/we-doing-3-370.jpg"
+                    ./images/we-doing-desktop-3-370.jpg 1x,
+                    ./images/we-doing-desktop-3-740.jpg 2x"
+                src="./images/we-doing-desktop-3-370.jpg"
                 alt="планшет с изображением палитры цветов"
                 width="370"
               />
@@ -180,14 +180,12 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/our-team-mobile-product-designer-1-450.jpg 1x,
-                  ./images/our-team-mobile-product-designer-1-900.jpg 2x"
-                src="./images/our-team-mobile-product-designer-1-450.jpg"
-                alt="фото Игоря Демьяненко"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/our-team-desktop-product-designer-1-270.jpg 1x, ./images/our-team-desktop-product-designer-1-540.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/our-team-tablet-product-designer-1-354.jpg 1x, ./images/our-team-tablet-product-designer-1-708.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/our-team-mobile-product-designer-1-450.jpg 1x, ./images/our-team-mobile-product-designer-1-900.jpg 2x" media="(max-width:767px)">
+                <img src="./images/our-team-mobile-product-designer-1-450.jpg" alt="фото Игоря Демьяненко"/>
+              </picture>
               <div class="team-desc">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-post" lang="en">Product Designer</p>
@@ -224,14 +222,12 @@
               </div>           
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                ./images/our-team-mobile-frontend-developer-2-450.jpg 1x,
-                ./images/our-team-mobile-frontend-developer-2-900.jpg 2x"
-                src="./images/our-team-mobile-frontend-developer-2-450.jpg"
-                alt="фото Ольги Репиной"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/our-team-desktop-frontend-developer-2-270.jpg 1x, ./images/our-team-desktop-frontend-developer-2-540.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/our-team-tablet-frontend-developer-2-354.jpg 1x, ./images/our-team-tablet-frontend-developer-2-708.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/our-team-mobile-frontend-developer-2-450.jpg 1x, ./images/our-team-mobile-frontend-developer-2-900.jpg 2x" media="(max-width:767px)">
+                <img src="./images/our-team-mobile-frontend-developer-2-450.jpg" alt="фото Ольги Репиной"/>
+              </picture>
               <div class="team-desc">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-post" lang="en">Frontend Developer</p>
@@ -268,14 +264,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                ./images/our-team-mobile-marketing-3-450.jpg 1x,
-                ./images/our-team-mobile-marketing-3-900.jpg 2x"
-                src="./images/our-team-mobile-marketing-3-450.jpg"
-                alt="фото Николая Тарасова"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/our-team-desktop-marketing-3-270.jpg 1x, ./images/our-team-desktop-marketing-3-540.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/our-team-tablet-marketing-3-354.jpg 1x, ./images/our-team-tablet-marketing-3-708.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/our-team-mobile-marketing-3-450.jpg 1x, ./images/our-team-mobile-marketing-3-900.jpg 2x" media="(max-width:767px)">
+                <img src="./images/our-team-mobile-marketing-3-450.jpg" alt="фото Николая Тарасова"/>
+              </picture>
               <div class="team-desc">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-post" lang="en">Marketing</p>
@@ -312,14 +306,12 @@
               </div>              
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                ./images/our-team-mobile-ui-designer-4-450.jpg 1x,
-                ./images/our-team-mobile-ui-designer-4-900.jpg 2x"
-                src="./images/our-team-mobile-ui-designer-4-450.jpg"
-                alt="фото Михаила Ермакова"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/our-team-desktop-ui-designer-4-270.jpg 1x, ./images/our-team-desktop-ui-designer-4-540.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/our-team-tablet-ui-designer-4-354.jpg 1x, ./images/our-team-tablet-ui-designer-4-708.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/our-team-mobile-ui-designer-4-450.jpg 1x, ./images/our-team-mobile-ui-designer-4-900.jpg 2x" media="(max-width:767px)">
+                <img src="./images/our-team-mobile-ui-designer-4-450.jpg" alt="фото Михаила Ермакова"/>
+              </picture>
               <div class="team-desc">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-post" lang="en">UI Designer</p>

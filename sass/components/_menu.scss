@@ -13,6 +13,10 @@
 .icon-menu {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  .menu-button.is-open & {
+    display: none;
+  }
+
   .menu-button:hover &,
   .menu-button:focus & {
     fill: $accent-clr;
@@ -22,22 +26,18 @@
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  .menu-button & {
+    display: none;
+  }
+
+  .menu-button.is-open & {
+    display: block;
+  }
+
   .menu-button:hover &,
   .menu-button:focus & {
     fill: $accent-clr;
   }
-}
-
-.menu-button .icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .menu-container {
@@ -91,10 +91,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fonts($fs:14px, $fw:500, $lh:1.14, $ls:0.02em);
   color: $title-text-clr;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
